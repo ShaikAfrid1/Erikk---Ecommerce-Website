@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: General Sans, sans-serif;
+}
+
+main {
+  width: 100%;
+  padding: 1.5rem;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .hero_text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+main .hero_text img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .hero_text .text {
+  display: flex;
+  justify-content: space-between;
+  font-family: monospace;
+}
+main .hero_text .text p {
+  text-transform: uppercase;
+}
+main .image_text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+main .image_text .top {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+main .image_text .top img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .image_text .bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+main .image_text .bottom h1 {
+  font-size: 2.5rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+main .image_text .bottom p {
+  font-size: 1.4em;
+  font-weight: 200;
+  font-family: monospace;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+main .image_text .bottom .services {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+}
+main .image_text .bottom .services .service {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main .image_text .bottom .services .service p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.7em;
+  font-weight: 400;
+}
+main .verticle_text {
+  width: 100%;
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+}
+main .verticle_text .top {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+main .verticle_text .top img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .verticle_text .bottom {
+  display: flex;
+  gap: 1em;
+}
+main .verticle_text .bottom p {
+  writing-mode: vertical-rl;
+  padding-top: 0.5em;
+  font-family: monospace;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 160%;
+}
+main .verticle_text .bottom .text h1 {
+  font-size: 2.75rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  opacity: 0.8;
+}
+main .verticle_text .bottom .text p {
+  writing-mode: initial;
+  font-size: 1.125rem;
+  font-family: monospace;
+  font-weight: 400;
+  line-height: 160%;
+  color: rgba(17, 17, 17, 0.5);
+  text-transform: initial;
+}
+
+@media (min-width: 800px) {
+  main {
+    padding: 4rem;
+    gap: 4rem;
+  }
+  main .image_text {
+    flex-direction: row-reverse;
+    gap: 4em;
+  }
+  main .image_text .bottom h1 {
+    font-size: 4.8em;
+    letter-spacing: 0.05em;
+    font-weight: 100;
+    opacity: 0.8;
+  }
+  main .image_text .bottom p {
+    font-size: 1.375rem;
+  }
+  main .image_text .bottom .services {
+    margin-top: auto;
+  }
+  main .image_text .bottom .services .service p {
+    font-size: 2em;
+  }
+  main .verticle_text {
+    flex-direction: row;
+    gap: 4em;
+  }
+  main .verticle_text .top {
+    width: 30%;
+  }
+  main .verticle_text .bottom {
+    width: 70%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  main .verticle_text .bottom .text {
+    display: flex;
+    flex-direction: column;
+  }
+  main .verticle_text .bottom .text h1 {
+    font-size: 5.5em;
+  }
+  main .verticle_text .bottom .text p {
+    margin-top: auto;
+    width: 60%;
+  }
+}/*# sourceMappingURL=style.css.map */
